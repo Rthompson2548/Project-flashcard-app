@@ -1,0 +1,48 @@
+{
+  "decks": [
+    {
+      "name": "",
+      "description": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 6
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 7
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 8
+    },
+    {
+      "name": "",
+      "description": "",
+      "id": 9
+    }
+  ],
+  "cards": [
+    {
+      "front": "front",
+      "back": "answer",
+      "deckId": 6,
+      "id": 1
+    },
+    {
+      "front": "front",
+      "back": "back",
+      "deckId": 4,
+      "id": 2
+    }
+  ]
+}
