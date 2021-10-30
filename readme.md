@@ -13,4 +13,6 @@ The features in this app differ for the students and the teachers. Teachers have
 React and BootStrap were used to build this application
 
 ## Screenshots
-![Alt Text](/images/real-official-home-page.png)
+<p>
+    <img src="/images/real-official-home-page.png" width="220" height="240" />
+</p>
