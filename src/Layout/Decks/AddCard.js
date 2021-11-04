@@ -66,6 +66,9 @@ function AddCard({ updateDecks }) {
   return (
     <div className="col-9 mx-auto" style={{ fontFamily: "Space Grotesk" }}>
       {/*navigation bar */}
+      <div className="row pl-4 pb-2">
+          <h1>Add Card</h1>
+        </div>
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start ml-4 mr-4 pr-4">
           {/* a link to the home page */}

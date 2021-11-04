@@ -30,6 +30,9 @@ function CreateDeck({ updateDecks }) {
   return (
     <div className="col-9 mx-auto" style={{ fontFamily: "Space Grotesk" }}>
       {/* a navigation bar that contains two links */}
+      <div className="row pl-4 pb-2">
+          <h1>Create Deck</h1>
+        </div>
       <nav aria-label="breadcrumb">
       <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
           <li className="breadcrumb-item">
