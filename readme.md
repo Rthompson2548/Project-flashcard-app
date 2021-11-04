@@ -10,4 +10,9 @@ The features in this app differ for the students and the teachers. Teachers have
 
 ## Technologies & tools
 
-React and bootstrap were used to build this application
+React and BootStrap were used to build this application
+
+## Screenshots
+<p>
+    <img src="/images/real-official-home-page.png" width="220" height="240" />
+</p>
