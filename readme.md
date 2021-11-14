@@ -1,18 +1,28 @@
 
-# Flashcard-o-matic
+# Flash Learning
 
 ## Description
 
-For this project, I created an application for students and teachers to use and create flashcard decks for studying. 
+In this project, I created a flashcard application that allows teachers to create sets of flashcards for students to use as study materials. 
 
 ## Features
-The features in this app differ for the students and the teachers. Teachers have access to editing and creating, as well as deleting, the flashcard decks. Students have access to decks assigned to their classes. 
 
-## Technologies & tools
+The features in this application can utilizied by both students and teachers. Student users can view their assigned card decks. Teacher users can create, read, update and delete decks for their classes. 
 
-React and BootStrap were used to build this application
+## Technologies & Tools
+- [ ] React
+    - [ ] React Router: Routes and nested routes
+    - [ ] React Hooks: useState(), useParams(), useHistory(), useEffect()
+- [ ] Bootstrap 4
+- [ ] JavaScript
+- [ ] Node
+- [ ] Express
+- [ ] HTML
+- [ ] CSS
+- [ ] JSON
 
-## Screenshots
-<p>
-    <img src="/images/real-official-home-page.png" width="220" height="240" />
-</p>
+## Run locally
+- [ ] Fork & clone repository
+- [ ] Run `npm install`
+- [ ] Start application in browser:
+    - [ ] Windows users: Run `npm run start:server` & `npm run start:react`
