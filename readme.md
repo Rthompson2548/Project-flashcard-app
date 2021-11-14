@@ -25,4 +25,5 @@ The features in this application can utilizied by both students and teachers. St
 - [ ] Fork & clone repository
 - [ ] Run `npm install`
 - [ ] Start application in browser:
-    - [ ] Windows users: Run `npm run start:server` & `npm run start:react`
+    - [ ] PC users: Run `npm run start:server` & `npm run start:react`
+    - [ ] All other users: Run `npm start`
