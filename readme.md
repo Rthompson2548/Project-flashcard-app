@@ -27,3 +27,6 @@ The features in this application can utilizied by both students and teachers. St
 - [ ] Start application in browser:
     - [ ] PC users: Run `npm run start:server` & `npm run start:react`
     - [ ] All other users: Run `npm start`
+
+## Images
+![home-page](/images/flashcard-app-home-page.png)
