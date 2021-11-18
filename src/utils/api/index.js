@@ -31,26 +31,35 @@
   * This function is NOT exported because it is not needed outside of this file.
   *
   * @param url
-  *  the url for the requst.
+  *  the url for the request.
   * @param options
   *  any options for fetch
   * @returns {Promise<Error|any>}
   *  a promise that resolves to the `json` data or an error.
   *  If the response is not in the 200 - 399 range the promise is rejected.
   */
- async function fetchJson(url, options) {
-   try {
-     const response = await fetch(url, options)
-     if (response.status < 200 || response.status > 399) {
-       throw new Error(`${response.status} - ${response.statusText}`)
-     }
-     return await response.json()
-   } catch (error) {
-     if (error.name !== "AbortError") {
-       throw error
-     }
-   }
- }
+  async function fetchJson(url, options, onCancel) {
+    try {
+      const response = await fetch(url, options);
+  
+      if (response.status < 200 || response.status > 399) {
+        throw new Error(`${response.status} - ${response.statusText}`);
+      }
+  
+      if (response.status === 204) {
+        return null;
+      }
+  
+      return await response.json();
+  
+    } catch (error) {
+      if (error.name !== "AbortError") {
+        console.error(error.stack);
+        throw error;
+      }
+      return Promise.resolve(onCancel);
+    }
+  }
  
  /**
   * Retrieves all existing decks.
@@ -92,10 +101,10 @@
   * @returns {Promise<any>}
   *  a promise that resolves to the saved deck.
   */
- export async function readDeck(deckId, signal) {
-   const url = `${API_BASE_URL}/decks/${deckId}?_embed=cards`
-   return await fetchJson(url, { signal })
- }
+  export async function readDeck(deckId, signal) {
+    const url = `${API_BASE_URL}/decks/${deckId}?_embed=cards`;
+    return await fetchJson(url, { signal }, {});
+  }
  
  /**
   * Updates an existing deck

@@ -157,7 +157,7 @@ function CardList({ cards }) {
               {/* if card is on back side, provide a button to go to next card */}
             </div>
             <div className="row mx-auto w-75">
-            <Link to="/decks/new" className="btn-lg btn-success mb-3 mx-auto pr-4">
+            <Link to={`/decks/new`}  className="btn-lg btn-success mb-3 mx-auto pr-4">
               <i className="fa fa-plus mr-2 pl-2" aria-hidden="true">
               </i> 
               Add Card

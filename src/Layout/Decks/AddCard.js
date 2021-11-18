@@ -8,7 +8,7 @@ import CardForm from "./CardForm.js";
 // takes the current number of decks, and returns it after adding
 // the newly added decks
 
-function AddCard({ updateDecks }) {
+function AddCard() {
   // the original state of a card deck is an empty array
   const [deck, setDeck] = useState([]);
 
@@ -46,19 +46,18 @@ function AddCard({ updateDecks }) {
     addCard({ ...card, [target.name]: target.value });
   };
 
-  const submitForm = async (event) => {
+  const submitForm = (event) => {
     event.preventDefault();
-    // takes sets a card's object to contain all the
-    // correct key/value pairs using addCard()
+    // uses 'addCard' to add the new card to deck.
     addCard({ ...card, deckId: deckId });
-    // makes a post request to add the card to the deck's
-    // card list, and stringify's so it is no longer an
-    // object using createCard()
-    await createCard(deckId, card);
-    // return the new length of the card deck using
-    // updateDecks()
-    updateDecks(1);
-    // update the deck with the newly added card using addCard()
+    // use 'createCard()' from utils/api/index.js;
+    // makes a post request to add the card to the decks
+    // card list, and stringify's so it is no longer an object.
+    createCard(deckId, card);
+    // returns a new length of the card deck using 'updateDecks()'
+    //updateDecks(1)
+    // reset the deck initial state
+    console.log("'submitForm' saved");
     addCard({ front: "", back: "", deckId: "" });
   };
 
@@ -67,13 +66,13 @@ function AddCard({ updateDecks }) {
     <div className="col-9 mx-auto" style={{ fontFamily: "Space Grotesk" }}>
       {/*navigation bar */}
       <div className="row pl-4 pb-2">
-          <h1>Add Card</h1>
-        </div>
+        <h1>Add Card</h1>
+      </div>
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start ml-4 mr-4 pr-4">
           {/* a link to the home page */}
           <li className="breadcrumb-item">
-            <Link to={"/"}>
+            <Link to={`/`}>
               <i
                 className="fa fa-home"
                 style={{ color: "black" }}
@@ -85,12 +84,13 @@ function AddCard({ updateDecks }) {
           {/* a link to the deck */}
           <li className="breadcrumb-item">
             <Link to={`/decks/${deckId}`} style={{ color: "black" }}>
-              Deck name
+              {/* Deck name */}
+              {deck.name} 
             </Link>
           </li>
 
           {/* a link for adding a card */}
-          <li className="breadcrumb-item">Add Card</li>
+          <Link className="breadcrumb-item" to={`/decks/${deckId}/cards/new`} style={{ color: "black" }}> Add Card</Link>
         </ol>
       </nav>
 

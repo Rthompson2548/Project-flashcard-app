@@ -37,7 +37,7 @@ function CreateDeck({ updateDecks }) {
       <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
           <li className="breadcrumb-item">
             {/* a link the redirects to the home page */}
-            <Link to={"/"}>
+            <Link to={`/`}>
               <i
                 className="fas fa-home"
                 style={{ color: "black" }}
@@ -84,7 +84,7 @@ function CreateDeck({ updateDecks }) {
         </div>
 
         {/* a button for cancelling the deck */}
-        <Link to="/" name="cancel" className="btn btn-secondary mr-3">
+        <Link to={`/`} name="cancel" className="btn btn-secondary mr-3">
           Cancel
         </Link>
 

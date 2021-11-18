@@ -25,7 +25,7 @@ function Study() {
                     <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
 
                         <li className="breadcrumb-item">
-                            <Link to={"/"}><i className="fa fa-home" aria-hidden="true" style={{color: "black"}}>
+                            <Link to={`/`}><i className="fa fa-home" aria-hidden="true" style={{color: "black"}}>
                                 </i> 
                             </Link>
                         </li>

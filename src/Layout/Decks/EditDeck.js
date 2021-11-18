@@ -46,7 +46,7 @@ function EditDeck({ updateDecks }) {
           <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
             {" "}
             <li className="breadcrumb-item">
-              <Link to={"/"} style={{ color: "black" }}>
+              <Link to={`/`} style={{ color: "black" }}>
                 <i className="fa fa-home" aria-hidden="true"></i>
               </Link>
             </li>

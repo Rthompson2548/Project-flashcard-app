@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import DeckList from "./DeckList";
 import { Link } from "react-router-dom";
-import { listDecks, readDeck } from "../../utils/api/index.js";
+import { listDecks } from "../../utils/api/index.js";
 
 function Home({ updateDecks, deckLength }) {
   const [decks, setDecks] = useState([]);
@@ -21,7 +21,7 @@ function Home({ updateDecks, deckLength }) {
   return (
     <div style={{ fontFamily: "Space Grotesk" }}>
       <div className="row mx-auto w-75">
-        <Link to="/decks/new" className="btn btn-success mb-3 mx-auto">
+        <Link to={`/decks/new`} className="btn btn-success mb-3 mx-auto">
           <i className="fa fa-plus mr-2" aria-hidden="true"></i>
           Create Deck
         </Link>
