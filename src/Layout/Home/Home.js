@@ -34,14 +34,6 @@ function Home({ updateDecks, deckLength }) {
           <DeckList key={deck.id} deck={deck} updateDecks={updateDecks} />
         ))}
       </div>
-
-      {/* <div className="row mx-auto w-75">
-            <Link to="/decks/new" className="btn btn-success mb-3 mx-auto">
-              <i className="fa fa-plus mr-2" aria-hidden="true">
-              </i> 
-              Create Deck
-            </Link>
-        </div> */}
     </div>
   );
 }
