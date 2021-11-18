@@ -25,8 +25,8 @@ The features in this application can utilizied by both students and teachers. St
 - [ ] Fork & clone repository
 - [ ] Run `npm install`
 - [ ] Start application in browser:
-    - [ ] PC users: Run `npm run start:server` & `npm run start:react`
-    - [ ] All other users: Run `npm start`
+    - [ ] Run `npm start`
+    - [ ] PC users may need to run: `npm run start:server` & `npm run start:react`
 
 ## Images
 ![flashcard-app-home-page](https://user-images.githubusercontent.com/80596387/141700757-cb151c2a-4d93-41ae-9a25-1c58b25cca9b.png)
