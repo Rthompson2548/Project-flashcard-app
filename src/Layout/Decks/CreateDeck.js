@@ -31,11 +31,11 @@ function CreateDeck({ updateDecks }) {
     <div className="col-9 mx-auto" style={{ fontFamily: "Space Grotesk" }}>
       {/* a navigation bar that contains two links */}
       <div className="row pl-4 pb-2">
-          <h1>Create Deck</h1>
-        </div>
+        <h1>Create Deck</h1>
+      </div>
       <nav aria-label="breadcrumb">
-      <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
-          <li className="breadcrumb-item">
+        <ol className="breadcrumb bg-light shadow bg-white rounded pt-2 d-flex justify-content-start">
+          <li className="breadcrumb-item" >
             {/* a link the redirects to the home page */}
             <Link to={`/`}>
               <i
@@ -84,12 +84,16 @@ function CreateDeck({ updateDecks }) {
         </div>
 
         {/* a button for cancelling the deck */}
-        <Link to={`/`} name="cancel" className="btn btn-secondary mr-3">
+        <Link to={`/`} name="cancel" className="btn btn mr-3" style={{ border: "2px solid #6D1CBC", color: "#6D1CBC" }}>
           Cancel
         </Link>
 
         {/* a button for submitted the deck */}
-        <button type="submit" className="btn btn-primary">
+        <button
+          type="submit"
+          className="btn text-white"
+          style={{ backgroundColor: "#6D1CBC" }}
+        >
           Submit
         </button>
       </form>

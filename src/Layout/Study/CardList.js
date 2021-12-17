@@ -61,12 +61,12 @@ function CardList({ cards }) {
     );
   } else {
     return (
-      <div className="row p-3" style={{fontFamily: "Space Grotesk"}}>
+      <div className="row p-3" style={{ fontFamily: "Space Grotesk" }}>
         <div className="pl-4 pr-4 w-100">
           <div className="card-body">
-          <div className="row pl-3 pb-2">
-        <h1>Your Cards</h1>
-      </div>
+            <div className="row pl-3 pb-2">
+              <h1>Your Cards</h1>
+            </div>
             <div className="card m-4 shadow p-2 mb-5 bg-white rounded">
               <div className="card-body">
                 <h4 className="card-title d-flex justify-content-center pt-3">
@@ -82,7 +82,8 @@ function CardList({ cards }) {
               {/* flip card button */}
               <button
                 onClick={flipHandler}
-                className="btn btn-light border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
+                style={{ backgroundColor: "#6D1CBC" }}
+                className="btn mb-4 mx-auto text-white pl-4 pr-4 pb-2 pt-2"
               >
                 Flip
               </button>
@@ -104,7 +105,8 @@ function CardList({ cards }) {
               {/* flip card button */}
               <button
                 onClick={flipHandler}
-                className="btn btn-light border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
+                style={{ backgroundColor: "#6D1CBC" }}
+                className="btn btn-light text-white border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
               >
                 Flip
               </button>
@@ -127,7 +129,8 @@ function CardList({ cards }) {
               {/* flip card button */}
               <button
                 onClick={flipHandler}
-                className="btn btn-light border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
+                style={{ backgroundColor: "#6D1CBC" }}
+                className="btn btn-light text-white border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
               >
                 Flip
               </button>
@@ -149,7 +152,8 @@ function CardList({ cards }) {
               {/* flip card button */}
               <button
                 onClick={flipHandler}
-                className="btn btn-light border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
+                style={{ backgroundColor: "#6D1CBC" }}
+                className="btn btn-light text-white border-dark mb-4 mx-auto pl-4 pr-4 pb-2 pt-2"
               >
                 Flip
               </button>
@@ -157,12 +161,14 @@ function CardList({ cards }) {
               {/* if card is on back side, provide a button to go to next card */}
             </div>
             <div className="row mx-auto w-75">
-            <Link to={`/decks/new`}  className="btn-lg btn-success mb-3 mx-auto pr-4">
-              <i className="fa fa-plus mr-2 pl-2" aria-hidden="true">
-              </i> 
-              Add Card
-            </Link>
-        </div>
+              <Link
+                to={`/decks/new`}
+                className="btn-lg btn mb-3 mx-auto pr-3"
+                style={{ border: "2px solid #6D1CBC", color: "#6D1CBC" }}
+              >
+                Add Card
+              </Link>
+            </div>
           </div>
         </div>
       </div>

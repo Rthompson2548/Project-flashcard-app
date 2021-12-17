@@ -96,13 +96,18 @@ function EditDeck({ updateDecks }) {
           <Link
             to={`/decks/${deckId}`}
             name="cancel"
-            className="btn btn-secondary mr-3"
+            className="btn mr-3"
+            style={{ border: "2px solid #6D1CBC", color: "#6D1CBC" }}
           >
             Cancel
           </Link>
 
           {/* submit button */}
-          <button type="submit" className="btn btn-primary">
+          <button
+            type="submit"
+            className="btn text-white"
+            style={{ backgroundColor: "#6D1CBC" }}
+          >
             Submit
           </button>
         </form>

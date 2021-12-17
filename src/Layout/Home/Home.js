@@ -21,8 +21,11 @@ function Home({ updateDecks, deckLength }) {
   return (
     <div style={{ fontFamily: "Space Grotesk" }}>
       <div className="row mx-auto w-75">
-        <Link to={`/decks/new`} className="btn btn-success mb-3 mx-auto">
-          <i className="fa fa-plus mr-2" aria-hidden="true"></i>
+        <Link
+          to={`/decks/new`}
+          className="btn btn-success mb-3 mx-auto"
+          style={{ backgroundColor: "#6D1CBC" }}
+        >
           Create Deck
         </Link>
       </div>

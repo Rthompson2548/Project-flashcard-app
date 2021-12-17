@@ -1,4 +1,15 @@
 {
-  "decks": [],
+  "decks": [
+    {
+      "name": "deck 1",
+      "description": "deck 1 description",
+      "id": 2
+    },
+    {
+      "name": "card 3",
+      "description": "card 3 description",
+      "id": 3
+    }
+  ],
   "cards": []
 }

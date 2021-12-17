@@ -96,31 +96,43 @@ function Deck({ updateDecks }) {
               {/* edit button */}
               <Link
                 to={`/decks/${id}/edit`}
-                className="btn btn-lg btn-outline-secondary pl-1 pr-1 ml-2 pt-3"
+                className="btn btn-sm pt-2"
+                style={{
+                  border: "3px solid #6D1CBC",
+                  backgroundColor: "#6D1CBC",
+                }}
               >
                 <i
                   aria-hidden="true"
-                  style={{ color: "black" }}
-                  className="bi bi-pencil-fill p-2"
+                  style={{ color: "#ffffff" }}
+                  className="bi bi-pencil-fill"
                 ></i>
               </Link>
 
               {/* study button */}
               <Link
                 to={`/decks/${id}/study`}
-                className="btn btn-lg btn-outline-secondary pl-1 pr-1 ml-2 pt-3"
+                className="btn btn-sm btn-outline-secondary ml-2 pt-2"
+                style={{
+                  border: "3px solid #6D1CBC",
+                  backgroundColor: "#6D1CBC",
+                }}
               >
-                <i className="bi bi-book p-2" style={{ color: "black" }}></i>
+                <i className="bi bi-book" style={{ color: "#ffffff" }}></i>
               </Link>
 
               {/* add cards button */}
               <Link
                 to={`/decks/${id}/cards/new`}
-                className="btn btn-lg btn-outline-secondary pl-1 pr-1 ml-2 pt-3"
+                className="btn btn-sm btn-outline-secondary pt-2 ml-2"
+                style={{
+                  border: "3px solid #6D1CBC",
+                  backgroundColor: "#6D1CBC",
+                }}
               >
                 <i
-                  className="fa fa-plus p-2"
-                  style={{ color: "black" }}
+                  className="fa fa-plus"
+                  style={{ color: "#ffffff" }}
                   aria-hidden="true"
                 ></i>
               </Link>
@@ -130,11 +142,15 @@ function Deck({ updateDecks }) {
                 onClick={deleteHandler}
                 name="delete"
                 value={id}
-                className="btn btn-lg btn-outline-secondary p-1 ml-2"
+                className="btn btn-sm btn-outline-secondary p-1 ml-2"
+                style={{
+                  border: "3px solid #6D1CBC",
+                  backgroundColor: "#6D1CBC",
+                }}
               >
                 <i
                   className="fa fa-trash p-2"
-                  style={{ color: "black" }}
+                  style={{ color: "#ffffff" }}
                   aria-hidden="true"
                 ></i>
               </button>
@@ -161,12 +177,16 @@ function Deck({ updateDecks }) {
                 {/* edit button */}
                 <Link
                   to={`${url}/cards/${card.id}/edit`}
-                  className="btn btn-lg btn-outline-secondary pt-3 pb-3 pl-3 pr-3 m-4"
+                  className="btn btn-sm btn-outline-secondary pt-2 pb-2 mr-2 mt-4 mb-4"
+                  style={{
+                    border: "3px solid #6D1CBC",
+                    backgroundColor: "#6D1CBC",
+                  }}
                 >
                   <i
                     aria-hidden="true"
-                    style={{ color: "black" }}
-                    className="bi bi-pencil-fill pl-2 pr-2"
+                    style={{ color: "#ffffff" }}
+                    className="bi bi-pencil-fill"
                   ></i>
                 </Link>
 
@@ -186,12 +206,16 @@ function Deck({ updateDecks }) {
                   }}
                   name="deleteCard"
                   value={card.id}
-                  className="btn btn-lg btn-outline-secondary pt-3 pb-3 pl-3 pr-3 ml-0 mr-4 mt-4 mb-4"
+                  className="btn btn-sm btn-outline-secondary pt-2 pb-1 mr-2 mt-4 mb-4"
+                  style={{
+                    border: "3px solid #6D1CBC",
+                    backgroundColor: "#6D1CBC",
+                  }}
                 >
                   <i
-                    className="fa fa-trash p-2"
-                    style={{ color: "black" }}
                     aria-hidden="true"
+                    style={{ color: "#ffffff" }}
+                    className="fa fa-trash"
                   ></i>{" "}
                 </Link>
               </div>
@@ -208,12 +232,16 @@ function Deck({ updateDecks }) {
                 {/* edit button */}
                 <Link
                   to={`${url}/cards/${card.id}/edit`}
-                  className="btn btn-lg btn-outline-secondary pt-3 pb-3 pl-3 pr-3 m-4"
+                  className="btn btn-sm btn-outline-secondary pt-2 pb-2 mr-2 mt-4 mb-4"
+                  style={{
+                    border: "3px solid #6D1CBC",
+                    backgroundColor: "#6D1CBC",
+                  }}
                 >
                   <i
                     aria-hidden="true"
-                    style={{ color: "black" }}
-                    className="bi bi-pencil-fill pl-2 pr-2"
+                    style={{ color: "#ffffff" }}
+                    className="bi bi-pencil-fill"
                   ></i>
                 </Link>
 
@@ -233,12 +261,16 @@ function Deck({ updateDecks }) {
                   }}
                   name="deleteCard"
                   value={card.id}
-                  className="btn btn-lg btn-outline-secondary pt-3 pb-3 pl-3 pr-3 ml-0 mr-4 mt-4 mb-4"
+                  className="btn btn-sm btn-outline-secondary pt-2 pb-2 mr-2 mt-4 mb-4"
+                  style={{
+                    border: "3px solid #6D1CBC",
+                    backgroundColor: "#6D1CBC",
+                  }}
                 >
                   <i
-                    className="fa fa-trash p-2"
-                    style={{ color: "black" }}
                     aria-hidden="true"
+                    style={{ color: "#ffffff" }}
+                    className="fa fa-trash"
                   ></i>{" "}
                 </Link>
               </div>
